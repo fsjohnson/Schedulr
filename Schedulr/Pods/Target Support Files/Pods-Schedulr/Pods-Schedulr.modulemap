@@ -1,0 +1,6 @@
+module Pods_Schedulr {
+  umbrella header "Pods-Schedulr-umbrella.h"
+
+  export *
+  module * { export * }
+}
