@@ -12,7 +12,7 @@ import SnapKit
 private struct Layout {
     static let imageViewMultiplier: CGFloat = 0.2
     static let tableViewOffset: CGFloat = 20
-    static let imageSize: CGSize = CGSize(width: 70, height: 70)
+    static let imageSize: CGSize = CGSize(width: 90, height: 90)
 }
 
 class TasksViewController: UIViewController {
@@ -31,8 +31,7 @@ class TasksViewController: UIViewController {
     private func setUpVC() {
         view.backgroundColor = .white
         
-        //TODO: - fix this
-        logoImage.image = #imageLiteral(resourceName: "uncheckedBox")
+        logoImage.image = #imageLiteral(resourceName: "logo")
         
         view.addSubview(logoImage)
         logoImage.snp.makeConstraints { make in
