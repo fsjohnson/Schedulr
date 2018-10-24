@@ -18,12 +18,14 @@ private struct Layout {
 
 class ItemCellTableViewCell: UITableViewCell {
     
+    // Private properties
     private var task: Task
     private let timeLabel = UILabel()
     private let taskLabel = UILabel()
     // TODO: - change image to button
     private let checkedImageView = UIImageView()
     
+    // Init
     init(task: Task) {
         self.task = task
 
@@ -35,6 +37,7 @@ class ItemCellTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // Private functions
     private func setUpCell() {
         timeLabel.text = setUpTime(with: task.selectedTime)
         timeLabel.textAlignment = .center
