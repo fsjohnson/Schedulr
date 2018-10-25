@@ -36,7 +36,7 @@ class ItemCellTableViewCell: UITableViewCell {
     }
     
     private func setUpCell() {
-        timeLabel.text = setUpTime(with: task.selectedTime)
+        timeLabel.text = task.selectedTime.setUpTime(with: "HH:mm")
         timeLabel.textAlignment = .center
         
         let taskDetails = task.taskDetails ?? "Please input task details"
@@ -78,13 +78,5 @@ class ItemCellTableViewCell: UITableViewCell {
             make.trailing.equalToSuperview().inset(Layout.labelOffset)
             make.size.equalTo(Layout.imageSize)
         }
-    }
-    
-    private func setUpTime(with selectedTime: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.timeZone = TimeZone.current
-        formatter.dateFormat = "HH:mm"
-        let timeString = formatter.string(from: selectedTime)
-        return timeString
     }
 }

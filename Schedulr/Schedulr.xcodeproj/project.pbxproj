@@ -15,6 +15,8 @@
 		B57667DC217D4DA10053EA09 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57667DB217D4DA10053EA09 /* ItemTableViewController.swift */; };
 		B57667DE217D4DBE0053EA09 /* ItemCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57667DD217D4DBE0053EA09 /* ItemCellTableViewCell.swift */; };
 		B5D179A1217E67380098BC64 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D179A0217E67370098BC64 /* Task.swift */; };
+		B5D4EE9321814E5E00714C3C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4EE9221814E5D00714C3C /* HeaderView.swift */; };
+		B5D4EE95218152F100714C3C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4EE94218152F100714C3C /* Extensions.swift */; };
 		D4E7811D00E59FB7489DFB9A /* libPods-Schedulr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DBD73864A2A77C23541103 /* libPods-Schedulr.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		B57667DB217D4DA10053EA09 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		B57667DD217D4DBE0053EA09 /* ItemCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellTableViewCell.swift; sourceTree = "<group>"; };
 		B5D179A0217E67370098BC64 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		B5D4EE9221814E5D00714C3C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		B5D4EE94218152F100714C3C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DB9AEA1BAF71001F5286B0FB /* Pods-Schedulr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schedulr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Schedulr/Pods-Schedulr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +83,8 @@
 				B57667C6217D4B6B0053EA09 /* AppDelegate.swift */,
 				B57667DB217D4DA10053EA09 /* ItemTableViewController.swift */,
 				B57667DD217D4DBE0053EA09 /* ItemCellTableViewCell.swift */,
+				B5D4EE9221814E5D00714C3C /* HeaderView.swift */,
+				B5D4EE94218152F100714C3C /* Extensions.swift */,
 				B5D179A0217E67370098BC64 /* Task.swift */,
 				B57667CA217D4B6B0053EA09 /* Main.storyboard */,
 				B57667D0217D4B740053EA09 /* Assets.xcassets */,
@@ -191,10 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57667CF217D4B6B0053EA09 /* Schedulr.xcdatamodeld in Sources */,
+				B5D4EE9321814E5E00714C3C /* HeaderView.swift in Sources */,
 				B57667DE217D4DBE0053EA09 /* ItemCellTableViewCell.swift in Sources */,
 				B5D179A1217E67380098BC64 /* Task.swift in Sources */,
 				B57667DC217D4DA10053EA09 /* ItemTableViewController.swift in Sources */,
 				B57667C7217D4B6B0053EA09 /* AppDelegate.swift in Sources */,
+				B5D4EE95218152F100714C3C /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D647VK95AB;
 				INFOPLIST_FILE = Schedulr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -358,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D647VK95AB;
 				INFOPLIST_FILE = Schedulr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
