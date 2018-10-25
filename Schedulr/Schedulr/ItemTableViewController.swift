@@ -49,6 +49,8 @@ class ItemTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return HeaderView(dateText: "Jan 11, 2017")
+        let task = tasks[section]
+        let dateText = task.selectedTime.setUpTime(with: "EEEE, MMM d")
+        return HeaderView(dateText: dateText)
     }
 }
