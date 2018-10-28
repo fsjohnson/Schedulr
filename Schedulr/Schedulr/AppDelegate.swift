@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let bounds = UIScreen.main.bounds
         self.window = UIWindow(frame: bounds)
-        self.window?.rootViewController = ItemTableViewController()
+        self.window?.rootViewController = TasksViewController()
         self.window?.makeKeyAndVisible()
         
         return true
