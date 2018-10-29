@@ -8,6 +8,10 @@
 
 import UIKit
 
+private struct Layout {
+    static let headerHight: CGFloat = 44
+}
+
 class ItemTableViewController: UITableViewController {
     
     // TODO: - set to array from core data, just using the below to test
@@ -38,5 +42,15 @@ class ItemTableViewController: UITableViewController {
         
         let task = tasks[indexPath.row]
         return ItemCellTableViewCell(task: task)
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return Layout.headerHight
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let task = tasks[section]
+        let dateText = task.selectedTime.setUpTime(with: "EEEE, MMM d")
+        return HeaderView(dateText: dateText)
     }
 }
