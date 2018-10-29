@@ -14,8 +14,9 @@ private struct Layout {
 
 class ItemTableViewController: UITableViewController {
     
+    // Public properties
     // TODO: - set to array from core data, just using the below to test
-    let task = Task(state: .notChecked, selectedTime: Date(), taskDetails: "tasks and stuff and more stuff stuff stuff")
+    private let task = Task(state: .notChecked, selectedTime: Date(), taskDetails: "tasks and stuff and more stuff stuff stuff")
     private var tasks: [Task] {
         // TODO: I guess eventually use a get set & get from core data...
         return [task]
