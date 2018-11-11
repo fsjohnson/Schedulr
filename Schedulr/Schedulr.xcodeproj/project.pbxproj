@@ -14,10 +14,14 @@
 		B57667D4217D4B740053EA09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57667D2217D4B740053EA09 /* LaunchScreen.storyboard */; };
 		B57667DC217D4DA10053EA09 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57667DB217D4DA10053EA09 /* ItemTableViewController.swift */; };
 		B57667DE217D4DBE0053EA09 /* ItemCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57667DD217D4DBE0053EA09 /* ItemCellTableViewCell.swift */; };
+		B5C171ED2188C18D00AD7B4B /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C171EC2188C18D00AD7B4B /* NewTaskViewController.swift */; };
+		B5C171F32188C82500AD7B4B /* NewTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C171F22188C82500AD7B4B /* NewTaskTableViewController.swift */; };
+		B5C171F62188C84B00AD7B4B /* NewTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C171F52188C84B00AD7B4B /* NewTaskViewModel.swift */; };
+		B5C171F8218D004D00AD7B4B /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C171F7218D004D00AD7B4B /* DatePickerTableViewCell.swift */; };
 		B5D179A1217E67380098BC64 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D179A0217E67370098BC64 /* Task.swift */; };
+		B5D4EE9121808BB700714C3C /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4EE9021808BB700714C3C /* TasksViewController.swift */; };
 		B5D4EE9321814E5E00714C3C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4EE9221814E5D00714C3C /* HeaderView.swift */; };
 		B5D4EE95218152F100714C3C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4EE94218152F100714C3C /* Extensions.swift */; };
-		B5D4EE9121808BB700714C3C /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4EE9021808BB700714C3C /* TasksViewController.swift */; };
 		D4E7811D00E59FB7489DFB9A /* libPods-Schedulr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DBD73864A2A77C23541103 /* libPods-Schedulr.a */; };
 /* End PBXBuildFile section */
 
@@ -33,10 +37,14 @@
 		B57667D5217D4B740053EA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B57667DB217D4DA10053EA09 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		B57667DD217D4DBE0053EA09 /* ItemCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellTableViewCell.swift; sourceTree = "<group>"; };
+		B5C171EC2188C18D00AD7B4B /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		B5C171F22188C82500AD7B4B /* NewTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskTableViewController.swift; sourceTree = "<group>"; };
+		B5C171F52188C84B00AD7B4B /* NewTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewModel.swift; sourceTree = "<group>"; };
+		B5C171F7218D004D00AD7B4B /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
 		B5D179A0217E67370098BC64 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		B5D4EE9021808BB700714C3C /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		B5D4EE9221814E5D00714C3C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		B5D4EE94218152F100714C3C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		B5D4EE9021808BB700714C3C /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		DB9AEA1BAF71001F5286B0FB /* Pods-Schedulr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schedulr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Schedulr/Pods-Schedulr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,13 +90,11 @@
 		B57667C5217D4B6B0053EA09 /* Schedulr */ = {
 			isa = PBXGroup;
 			children = (
-				B57667C6217D4B6B0053EA09 /* AppDelegate.swift */,
-				B57667DB217D4DA10053EA09 /* ItemTableViewController.swift */,
-				B57667DD217D4DBE0053EA09 /* ItemCellTableViewCell.swift */,
-				B5D4EE9221814E5D00714C3C /* HeaderView.swift */,
-				B5D4EE94218152F100714C3C /* Extensions.swift */,
-				B5D4EE9021808BB700714C3C /* TasksViewController.swift */,
-				B5D179A0217E67370098BC64 /* Task.swift */,
+				B5C171F42188C83B00AD7B4B /* ViewModels */,
+				B5C171EE2188C73F00AD7B4B /* View Controllers */,
+				B5C171EF2188C75300AD7B4B /* Views */,
+				B5C171F12188C76F00AD7B4B /* Other */,
+				B5C171F02188C75C00AD7B4B /* Models */,
 				B57667CA217D4B6B0053EA09 /* Main.storyboard */,
 				B57667D0217D4B740053EA09 /* Assets.xcassets */,
 				B57667D2217D4B740053EA09 /* LaunchScreen.storyboard */,
@@ -96,6 +102,52 @@
 				B57667CD217D4B6B0053EA09 /* Schedulr.xcdatamodeld */,
 			);
 			path = Schedulr;
+			sourceTree = "<group>";
+		};
+		B5C171EE2188C73F00AD7B4B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B57667DB217D4DA10053EA09 /* ItemTableViewController.swift */,
+				B5C171EC2188C18D00AD7B4B /* NewTaskViewController.swift */,
+				B5C171F22188C82500AD7B4B /* NewTaskTableViewController.swift */,
+				B5D4EE9021808BB700714C3C /* TasksViewController.swift */,
+				B57667DD217D4DBE0053EA09 /* ItemCellTableViewCell.swift */,
+				B5C171F7218D004D00AD7B4B /* DatePickerTableViewCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B5C171EF2188C75300AD7B4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4EE9221814E5D00714C3C /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5C171F02188C75C00AD7B4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5D179A0217E67370098BC64 /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5C171F12188C76F00AD7B4B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B57667C6217D4B6B0053EA09 /* AppDelegate.swift */,
+				B5D4EE94218152F100714C3C /* Extensions.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B5C171F42188C83B00AD7B4B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B5C171F52188C84B00AD7B4B /* NewTaskViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		FEDFB79E1385A5449C446B79 /* Frameworks */ = {
@@ -201,12 +253,16 @@
 			files = (
 				B57667CF217D4B6B0053EA09 /* Schedulr.xcdatamodeld in Sources */,
 				B5D4EE9321814E5E00714C3C /* HeaderView.swift in Sources */,
+				B5C171ED2188C18D00AD7B4B /* NewTaskViewController.swift in Sources */,
+				B5C171F62188C84B00AD7B4B /* NewTaskViewModel.swift in Sources */,
 				B57667DE217D4DBE0053EA09 /* ItemCellTableViewCell.swift in Sources */,
 				B5D179A1217E67380098BC64 /* Task.swift in Sources */,
 				B57667DC217D4DA10053EA09 /* ItemTableViewController.swift in Sources */,
+				B5C171F32188C82500AD7B4B /* NewTaskTableViewController.swift in Sources */,
 				B57667C7217D4B6B0053EA09 /* AppDelegate.swift in Sources */,
 				B5D4EE95218152F100714C3C /* Extensions.swift in Sources */,
 				B5D4EE9121808BB700714C3C /* TasksViewController.swift in Sources */,
+				B5C171F8218D004D00AD7B4B /* DatePickerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,19 +11,20 @@ import SnapKit
 
 private struct Layout {
     static let labelOffset: CGFloat = 10
-    static let minCellHeight: CGFloat = 25
+    static let minCellHeight: CGFloat = 40
     static let fontSize: CGFloat = 12
     static let imageSize: CGSize = CGSize(width: 18, height: 18)
 }
 
 class ItemCellTableViewCell: UITableViewCell {
     
+    // Public properties
+    var task: Task
+    
     // Private properties
-    private var task: Task
     private let timeLabel = UILabel()
     private let taskLabel = UILabel()
-    // TODO: - change image to button
-    private let checkedImageView = UIImageView()
+    private let checkButton = UIButton()
     
     // Init
     init(task: Task) {
@@ -37,7 +38,7 @@ class ItemCellTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // Private functions
+    // MARK: - Private functions
     private func setUpCell() {
         timeLabel.text = task.selectedTime.setUpTime(with: "HH:mm")
         timeLabel.textAlignment = .center
@@ -48,15 +49,16 @@ class ItemCellTableViewCell: UITableViewCell {
         taskLabel.numberOfLines = 0
         taskLabel.textAlignment = .left
         
-        // TODO make extension with font stuff
+        // TODO make extension with font & color stuff
         timeLabel.font = UIFont.boldSystemFont(ofSize: Layout.fontSize)
         taskLabel.font = UIFont.boldSystemFont(ofSize: Layout.fontSize)
         
-        checkedImageView.image = task.state == .checked ? #imageLiteral(resourceName: "checkedBox") : #imageLiteral(resourceName: "uncheckedBox")
+        updateButtonImageAndBackgroundColor(with: task.state)
+        checkButton.addTarget(self, action: #selector(checkedButtonAction), for: .touchUpInside)
         
         addSubview(timeLabel)
         addSubview(taskLabel)
-        addSubview(checkedImageView)
+        addSubview(checkButton)
         
         setUpConstraints()
     }
@@ -75,11 +77,30 @@ class ItemCellTableViewCell: UITableViewCell {
             make.top.bottom.centerY.equalToSuperview()
         }
         
-        checkedImageView.snp.makeConstraints { make in
+        checkButton.snp.makeConstraints { make in
             make.leading.equalTo(taskLabel.snp.trailing).offset(Layout.labelOffset)
             make.centerY.equalToSuperview()
             make.trailing.equalToSuperview().inset(Layout.labelOffset)
             make.size.equalTo(Layout.imageSize)
         }
+    }
+    
+    @objc private func checkedButtonAction() {
+        // If task.state is checked, set it to unchecked & vice versa
+        guard task.state == .checked else {
+            task.state = .checked
+            updateButtonImageAndBackgroundColor(with: task.state)
+            return
+        }
+        
+        task.state = .notChecked
+        updateButtonImageAndBackgroundColor(with: task.state)
+    }
+    
+    private func updateButtonImageAndBackgroundColor(with state: State) {
+        let buttonImage = state == .checked ? #imageLiteral(resourceName: "checkedBox") : #imageLiteral(resourceName: "uncheckedBox")
+        checkButton.setImage(buttonImage, for: .normal)
+        // TODO - get a better gray color
+        backgroundColor = state == .checked ? .lightGray : .white
     }
 }
