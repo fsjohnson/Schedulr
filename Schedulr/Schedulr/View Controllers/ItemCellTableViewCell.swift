@@ -38,7 +38,7 @@ class ItemCellTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // Private functions
+    // MARK: - Private functions
     private func setUpCell() {
         timeLabel.text = task.selectedTime.setUpTime(with: "HH:mm")
         timeLabel.textAlignment = .center

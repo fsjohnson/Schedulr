@@ -54,4 +54,9 @@ class ItemTableViewController: UITableViewController {
         let dateText = task.selectedTime.setUpTime(with: "EEEE, MMM d")
         return HeaderView(dateText: dateText)
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        present(NewTaskTableViewController(), animated: false, completion: nil)
+    }
+    
 }

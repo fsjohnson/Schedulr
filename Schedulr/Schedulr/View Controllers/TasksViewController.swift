@@ -27,7 +27,7 @@ class TasksViewController: UIViewController {
         setUpVC()
     }
     
-    // Private functions
+    // MARK: - Private functions
     private func setUpVC() {
         view.backgroundColor = .white
         
